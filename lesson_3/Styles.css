@@ -1,0 +1,129 @@
+/* Reset mặc định của trình duyệt */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Căn giữa form và thêm khoảng cách */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Container cho form */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+/* Tiêu đề form */
+.form-container h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Căn chỉnh nhóm form và thêm khoảng cách */
+.form-group {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Nhãn input */
+.name_input, .id_input {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Nhóm checkbox */
+.checkbox-group {
+    display: flex;
+    justify-content: space-between; /* Chia khoảng cách đều giữa 2 cột */
+    margin: auto;
+}
+
+/* Mỗi cột checkbox */
+.checkbox-group .column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Căn chỉnh các nhãn checkbox */
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Khoảng cách giữa các input */
+input[type="text"],
+input[type="email"],
+input[type="checkbox"] {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Phong cách cho nút submit */
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Định dạng cho phần input name */
+input[name="first_name"],
+input[name="last_name"] {
+    width: 48%;
+}
+
+/* Căn chỉnh chiều rộng cho các input trong dòng */
+input[type="text"],
+input[type="email"] {
+    width: calc(50% - 10px);
+}
+
+/* Định dạng label và input bên cạnh */
+label {
+    margin-right: 10px;
+}
+.checkbox-container {
+    display: flex;
+    justify-content: space-between; /* Căn đều các cột */
+    margin: auto;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn lề trái cho các phần tử trong cột */
+    flex-basis: 50%;
+  }
+  
+  label {
+    margin-bottom: 10px; /* Khoảng cách giữa các checkbox */
+    margin-right: 300px
+  }
+  
